@@ -93,8 +93,14 @@
         }
 
         function decrement() {
+            if( quantity<=0)
+            {
+                quantityElement.innerText = quantity;
+            }
+            else {
             quantityElement.innerText = --quantity;
-        }
+            }
+        }        
     </script>
 </body>
 </html>
